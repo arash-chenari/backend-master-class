@@ -24,22 +24,6 @@ namespace LibraryApi.Models.Books
     }
 }
 
-// Add AgeRange to Category
-// Add Rate to Book
-// Add PublishDate to Book
-// Add Page count to Book
-
-// get book by AgeRange
-// GetAll Category -> see Category Rate
-
-//Author -> books Category
-//Which Author has the most Rate
-
-//which Category has the most Content
-//Wich Author has wrote the most content
-
-//Add fluent api 
-//Add fluent migration
 
 
-//Read about fluent api and ef tips
+
