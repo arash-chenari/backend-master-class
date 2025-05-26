@@ -23,7 +23,3 @@ namespace LibraryApi.Models.Books
         public int BookId { get; set; }
     }
 }
-
-
-
-

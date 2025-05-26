@@ -61,6 +61,19 @@ namespace LibraryApi.Controllers
             }
               _repository.Remove(category);
         }
+
+        [HttpGet("by-rate")]
+        public List<GetCategoryByRateDto> GetbyRate()
+        {
+            return _repository.GetByRate();
+        }
+
+
+        [HttpGet("by-most-content")]
+        public List<GetCategoryByMostContentDto> GetByMostContent()
+        {
+            return _repository.GetByMostContent();
+        }
     }
 
 

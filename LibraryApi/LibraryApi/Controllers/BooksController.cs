@@ -1,4 +1,5 @@
 ﻿using LibraryApi.Models.Books;
+using LibraryApi.Models.Categories;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
@@ -58,7 +59,6 @@ namespace LibraryApi.Controllers
         public void Update(int id, UpdateBookDto dto)
         {
             var book = _repository.FindById(id);
-
             book.Id = id;
             book.Author = dto.Author;
             book.CategoryId = dto.CategoryId;
@@ -68,6 +68,18 @@ namespace LibraryApi.Controllers
             book.PageCount = dto.PageCount;
             
             _repository.Update(book);
+        }
+
+        [HttpGet("by-age-range/{ageRange}")]
+        public List<GetBookByAgeRange> GetByAgeRange(AgeRange ageRange)
+        {
+            return _repository.GetByAgeRange(ageRange);
+        }
+
+        [HttpGet("by-rate")]
+        public List<GetBookByRate> GetByRate()
+        {
+            return _repository.GetByRate();
         }
     }
 }
