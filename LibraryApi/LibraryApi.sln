@@ -4,6 +4,8 @@ VisualStudioVersion = 17.13.35828.75
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryApi", "LibraryApi\LibraryApi.csproj", "{E78A1D15-31E0-48BF-93C9-5181DBCFC7AC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryApi.Migrations", "LibraryApi.Migrations\LibraryApi.Migrations.csproj", "{01A68A8B-95A5-4689-B8E4-5B5F6ABD2064}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -14,6 +16,10 @@ Global
 		{E78A1D15-31E0-48BF-93C9-5181DBCFC7AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E78A1D15-31E0-48BF-93C9-5181DBCFC7AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E78A1D15-31E0-48BF-93C9-5181DBCFC7AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01A68A8B-95A5-4689-B8E4-5B5F6ABD2064}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01A68A8B-95A5-4689-B8E4-5B5F6ABD2064}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01A68A8B-95A5-4689-B8E4-5B5F6ABD2064}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01A68A8B-95A5-4689-B8E4-5B5F6ABD2064}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

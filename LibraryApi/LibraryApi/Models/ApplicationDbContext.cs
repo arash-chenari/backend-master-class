@@ -10,6 +10,13 @@ namespace LibraryApi.Models
         {
         }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.ApplyConfigurationsFromAssembly
+                (typeof(ApplicationDbContext).Assembly);
+        }
+
         public DbSet<Category> Categories { get; set; }
         public DbSet<Book> Books { get; set; }
     }
